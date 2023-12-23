@@ -38,3 +38,28 @@ const myFunction= function() {
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack (Primitive), Heap(non-primitive)
+
+let myYoutubename = "madhvibagheldotcom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename); //madhvibagheldotcom
+console.log(anothername); //chaiaurcode
+
+let userOne ={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "madhvi@google.com"
+
+console.log(userOne.email);//madhvi@google.com
+console.log(userTwo.email);//madhvi@google.com
