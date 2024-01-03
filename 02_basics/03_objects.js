@@ -22,7 +22,21 @@ const jsUser ={
 // console.log(jsUser[mySym])//mykey1
 // console.log(typeof jsUser[mySym]);
 
-jsUser.email="madhvi@chatgpt.com"
-Object.freeze(jsUser)//after this value change nhi hogi
-jsUser.email="madhvi@microsoft.com"
-console.log(jsUser);
+ jsUser.email="madhvi@chatgpt.com"
+//  Object.freeze(jsUser)//after this value change nhi hogi
+ jsUser.email="madhvi@microsoft.com"
+// console.log(jsUser);
+
+jsUser.greeting = function () {
+  console.log("Hello JS user");
+}
+// console.log(jsUser.greeting);//[Function (anonymous)]
+// console.log(jsUser.greeting());//Hello JS user
+
+
+jsUser.greetingTwo = function () {
+  console.log(`Hello JS user, ${this.name}`);
+}
+console.log(jsUser.greeting());//Hello JS user
+console.log(jsUser.greetingTwo());//Hello JS user, Madhvi
+
