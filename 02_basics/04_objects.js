@@ -54,5 +54,44 @@ user[1].email
 // console.log(Object.values(tinderUser));//[ '123abc', 'sammy', false ] 
 // console.log(Object.entries(tinderUser));//[ [ 'id', '123abc' ], [ 'name', 'sammy' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));//true  to check property exists or not
-console.log(tinderUser.hasOwnProperty('isLogged'));//false if property doesnt exist
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));//true  to check property exists or not
+// console.log(tinderUser.hasOwnProperty('isLogged'));//false if property doesnt exist
+
+
+//destructuring
+const course = {
+    coursename:"js in hindi",
+    price:"999",
+    courseInstructor:"hitesh"
+}
+
+// course.courseInstructor
+// const {courseInstructor} = course
+// console.log(courseInstructor);//hitesh
+
+const {courseInstructor:instructor} = course //object ko destructure karte he
+console.log(instructor);//hitesh 
+
+//+++++++++++++++++In React++++++++++++++++++++++++++++++++++
+
+const navbar =  ({company}) => {//prop.company ke jagha {company} likh ke destruturing hoti he
+
+}
+
+navbar(company = "hitesh")
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+//Json
+// {
+//     "name": "madhvi",
+//     "coursename":"js in hindi",
+//     "price":"free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
